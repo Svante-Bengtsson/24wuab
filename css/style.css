@@ -1,0 +1,687 @@
+#container{
+    display:grid;
+    height: 100vh;
+    width: 100vw;
+    margin: 0%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 10vh 100vh 80vh 80vh 80vh 20vh;
+    grid-template-areas:
+    'hd hd hd hd'
+    'img1 img1 img1 img1'
+    'img2 art1 art1 art1'
+    'art2 art2 art2 img3'
+    'img4 art3 art3 art3'
+    'ft ft ft ft';
+}
+#container1{
+    display:grid;
+    height: 120vh;
+    width: 100vw;
+    margin: 0%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 10vh 60vw 210vh 40vh 40vh 20vh;
+    grid-template-areas:
+    'hd hd hd hd'
+    'img1 img1 img1 img1'
+    'cards cards cards cards'
+    'art1 art1 art2 art2'
+    'knapp knapp knapp knapp'
+    'ft ft ft ft';
+}
+
+.LandingPage{
+    display: grid;
+    background-image: url("/img/Spacemarine_background.png");
+    background-position: bottom;
+    background-position: 5vw 10vh;
+    background-repeat: no-repeat;
+    background-size: 85vh;
+    
+}
+.modeller{
+    display: grid;
+    background-image: url("/img/page2MainBackgroundrevised.png");
+    background-position: bottom;
+    background-position: 0vw 0vh;
+    background-repeat: no-repeat;
+    background-size:100vw;
+    background-position-y: 10vh;
+    
+    
+}
+
+
+body{
+    margin: 0%;
+    overflow-x: hidden;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    
+}
+header{
+    grid-area: hd;
+    display: flex;
+    
+    color: black;
+    flex: 1;
+    align-items: center;
+    padding: 0px;
+   
+    margin: 10px;
+    margin-right: auto;
+    padding-right: 0px;
+    border-radius: 10px;
+}
+.boxshadow1{
+    grid-area: hd;
+    width: 100vw;
+    height: 10vh;
+    box-shadow: 0px 5px 5px #00000048;
+    background-color: #acccff;
+}
+
+header img{
+    width: 50px;
+}
+header h2{
+    font-weight: 100;
+}
+header .logg{
+    
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 10px;
+    transition: linear 0.1s;
+}
+header .logg:hover{
+    padding: 8px;
+    border-color: #000000;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 7px;
+}
+header .reg{
+    background-color: #000000;
+    text-decoration: none;
+    color: #acccff;
+    padding: 5px;
+    border-color: #000000;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 10px;
+    transition: linear 0.1s;
+}
+header .reg:hover{
+    background-color: #000000;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 7px;
+}
+header h2{
+    margin-right: 20px;
+}
+
+
+.cards {
+    display: flex;
+    justify-content:  space-around;
+    align-items: start;
+    grid-area: cards;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1rem;
+}
+  
+.card {
+    box-shadow: 0 8px 16px 0 black;
+    border: 0.5vw;
+    border-style: solid;
+    border-color: #0f6bfe;
+    border-radius: 1.5vw;
+    transition: 0.3s;
+    width: 40%; 
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    margin-top: 5vh;
+    background-color: #e8e8e8;
+    height: fit-content;
+}
+.card img{
+    border-radius: 1vw;
+    width: 100%;
+}
+
+
+.modeller .art1{
+    grid-area: art1;
+    margin: 2.5vw;
+    margin-left: 15vw;
+    margin-top: 0vw;
+    border: 0.5vw solid #0f6bfe;
+    padding: 0.5vw;
+    border-radius: 1.5vw;
+    height: fit-content;
+}
+.modeller .art2{
+    grid-area: art2;
+    margin: 2.5vw;
+    margin-right: 15vw;
+    margin-top: 0vw;
+    border: 0.5vw solid #0f6bfe;
+    padding: 0.5vw;
+    border-radius: 1.5vw;
+    height: fit-content;
+}
+
+.tit{
+    grid-area: cards;
+    border: 0.5vw solid #0f6bfe;
+    width: max-content;
+    height: fit-content;
+    margin-left: 6vw;
+    margin-right: auto;
+    padding: 0.5vw;
+    border-radius: 1.5vw;
+    align-self: flex-end;
+    margin-left: auto;
+}
+  
+  
+  
+.card:hover {
+    background-color: white;
+    box-shadow: 0 16px 32px 0 black;
+}
+
+
+.img1 {
+    grid-area: img1;
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-end;
+}
+.modeller .img1 h1 {
+    background-color: #ffffff;
+    border: 1vw solid;
+    border-color: #0f6bfe;
+    border-radius: 30px;
+    color: black;
+    padding: 10px;
+    font-size: 7vw;
+    margin-right: 2vw;
+    margin-bottom: 3vh;
+    margin-top: 1.5vw;
+}
+
+.LandingPage .img1 h1 {
+    background-color: #ffffff;
+    border: 10px solid;
+    border-color: #0f6bfe;
+    border-radius: 30px;
+    color: black;
+    padding: 10px;
+    font-size: 7vw;
+    margin-right: 2vw;
+    margin-bottom: 3vh;
+}
+.LandingPage .img1 h2 {
+    background-color: #ffffff;
+    border: 10px solid;
+    border-color: #0f6bfe;
+    border-radius: 20px;
+    color: black;
+    max-width: 40vw;
+    padding: 10px;
+    margin-right: 2vw;
+    margin-top: 0vh;
+}
+
+
+
+.LandingPage .art1{
+    grid-area: art1;
+    background: white;
+    padding: 0px;
+    margin: 30px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 15vh;
+    
+}
+.LandingPage .art2{
+    grid-area: art2;
+    background: white;
+    padding: 0px;
+    margin: 30px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 15vh;
+    
+}
+.LandingPage .art3{
+    grid-area: art3;
+    background: white;
+    padding: 0px;
+    margin: 30px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 15vh;
+}
+.LandingPage .knapp1{
+    grid-area: art1 ;
+    flex: 1;
+    justify-self: center;
+    align-self: end;
+    margin-left: -28vw;
+    width: 30vw;
+}
+.LandingPage .knapp1 a{
+    background-color: #0f6bfe;
+    color: black;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 2rem;
+    transition: linear 0.1s;
+    text-decoration: none;
+}
+.LandingPage .knapp1 a:hover{
+    background-color: #2376fc;
+    padding: 15px;
+    margin: 5px;
+    transition: linear 0.1s;
+}
+.LandingPage .knapp2{
+    grid-area: art2 ;
+    flex: 1;
+    justify-self: center;
+    align-self: end;
+    margin-left: 25vw;
+    width: 30vw;
+}
+.LandingPage .knapp2 a{
+    background-color: #0f6bfe;
+    color: black;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 2rem;
+    transition: linear 0.1s;
+    text-decoration: none;
+}
+.LandingPage .knapp2 a:hover{
+    background-color: #2376fc;
+    padding: 15px;
+    margin: 5px;
+    transition: linear 0.1s;
+}
+
+
+.LandingPage .knapp3{
+    grid-area: art3 ;
+    flex: 1;
+    justify-self: center;
+    align-self: end;
+    margin-left: -25vw;
+    width: 30vw;
+}
+.LandingPage .knapp3 a{
+    background-color: #0f6bfe;
+    color: black;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 2rem;
+    transition: linear 0.1s;
+    text-decoration: none;
+}
+.LandingPage .knapp3 a:hover{
+    background-color: #2376fc;
+    padding: 15px;
+    margin: 5px;
+    transition: linear 0.1s;
+}
+
+.LandingPage .img2{
+    grid-area: img2;
+    background: #0f6bfe;
+    padding: 0px;
+    border: 10px solid #0f6bfe;
+    margin: 30px;
+    border-radius: 10px;
+    margin-bottom: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.LandingPage .img2 img{
+    
+    border-radius: inherit;
+    align-self: center ;
+    justify-self: center;
+    height: 58vh;
+    
+}
+
+.LandingPage .img3 img{
+    height: 58vh;
+    border-radius: inherit;
+    margin-left: -4vw;
+}
+.LandingPage .img3{
+    grid-area: img3;
+    background: #0f6bfe;
+    padding: 0px;
+    border: 10px solid #0f6bfe;
+    margin: 30px;
+    border-radius: 10px;
+    margin-bottom: 15vh;
+    overflow-x: hidden;
+    width: fit-content;
+}
+
+.LandingPage .img4{
+    grid-area: img4;
+    background: #0f6bfe;
+    padding: 0px;
+    border: 10px solid #0f6bfe;
+    margin: 30px;
+    border-radius: 10px;
+    margin-bottom: 15vh;
+    overflow-x: hidden;
+}
+.LandingPage .img4 img{
+    height: 58vh;
+    max-width: 60vw;
+    border-radius: inherit;
+    margin-left: -13vw;
+}
+
+footer{
+    grid-area: ft;
+    background: grey;
+    margin-top: 5vh;
+    flex: 1;
+    text-align: center;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    
+}
+
+.finbild{
+    width: 100%;
+    align-self: end;
+}
+
+.knapp{
+    grid-area: knapp;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+.knapp a{
+    background-color: #0f6bfe;
+    color: black;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 2rem;
+    transition: linear 0.1s;
+    text-decoration: none;
+}
+.knapp a:hover{
+    background-color: #2376fc;
+    padding: 15px;
+    margin: 5px;
+    transition: linear 0.1s;
+}
+.knapp img{
+    width: 50px;
+    padding-right: 10px;
+}
+.hamburger-menu {
+    display: none;
+}
+.bar {
+    width: 30px;
+    height: 6px;
+    background-color: #000000;
+    margin: 5px 0px;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+/*chatgpt hjäpte med .change*/
+.change .bar.first {
+    transform: rotate(-45deg) translate(-5px, 11px);
+}
+.change .bar.middle {
+    opacity: 0;
+}
+.change .bar.last {
+    transform: rotate(45deg) translate(-5px, -11px);
+}
+
+
+
+
+
+
+
+#menu-items{
+    margin-left: 100vw;
+    transition: linear 0.1s;
+    margin-right: -60vw;
+}
+nav{
+    display: none;
+}
+@media screen and (max-width: 768px){
+    .modeller .art2{ 
+        margin-right: 5vw;
+    }
+    .modeller .art1{ 
+        margin-left: 5vw;
+    }
+    .hamburger-menu {
+        display: block;
+        grid-area: hd;
+        margin: auto;
+        margin-right: 5vw;
+        z-index: 21;
+    }
+    #menu-items {
+        grid-area: img1;
+        margin-left: auto;
+        z-index: 20;
+        width: min-content;
+        transition: linear 0.1s;
+        background-color: #ffffff;
+        padding: 10px;
+        margin-top: -10vh;
+        padding-top: 10vh;
+        padding-bottom: 100vh;
+        padding-left: 15vw;
+        padding-right: 5vw;
+        box-shadow: -5px 0px 5px #00000048;
+        text-align: right;
+        transition: 1.5s;
+        
+    }
+    #menu-items a{
+        text-decoration: none;
+        color: #000000;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        font-size: 4rem;
+    }
+    #container{
+        grid-template-columns: 100%;
+        grid-template-rows: 10vh 65vh 110vh 80vh 80vh 90vh 60vh 80vh 20vh;
+        grid-template-areas:
+        'hd'
+        'img1'
+        'img2' 
+        'art1'
+        'img3'
+        'art2'
+        'img4'
+        'art3'
+        'ft';
+    }
+    .LandingPage{
+        background-position: -5vw 20vh;
+        background-size: 50vh;
+    }
+    .img2 img{
+        border-radius: 0px;
+        width: 100vw;
+        height: auto;
+    }
+    
+    .img3 img{
+        width: 100vw;
+        height: auto;
+        border-radius: 0px 0px 0px 0px;
+        min-height: 20vh;
+        max-height: 120vh;
+        margin-top: -35vh;
+
+    }
+    .img3{
+        overflow-y: hidden;
+    }
+    .img4 img{
+        width: 100vh;
+        border-radius: 0px;
+        min-width: auto;
+        max-width:max-content;
+        
+    }
+    .img2{
+        background: none;
+        padding: 0px;
+        border: 0px solid #0f6bfe;
+        margin: 0px;
+        margin-right: 2vw;
+    }
+    .img3{
+        background: none;
+        padding: 0px;
+        border: 0px solid #0f6bfe;
+        margin: 0px;
+        margin-right: 2vw;
+    }
+    .img4{
+        background: none;
+        padding: 0px;
+        border: 0px solid #0f6bfe;
+        margin: 0px;
+        margin-right: 2vw;
+    }
+    .LandingPage .knapp1{
+        grid-area: art1 ;
+        flex: 1;
+        justify-self: center;
+        align-self: end;
+        margin-left: 0vw;
+        width: fit-content;
+    }
+    .LandingPage .knapp2{
+        grid-area: art2 ;
+        flex: 1;
+        justify-self: center;
+        align-self: end;
+        margin-left: 0vw;
+        width: fit-content;
+    }
+    .LandingPage .knapp3{
+        justify-self: center;
+        margin-left: 0vw;
+        width: fit-content;
+    }
+    .LandingPage .art1{
+        margin: 3vw;
+        margin-bottom: 12vh;
+    }
+    .LandingPage .art2{
+        margin: 3vw;
+        margin-bottom: 12vh;
+    }
+    .LandingPage .art3{
+        margin: 3vw;
+        margin-bottom: 12vh;
+    }
+    
+}
+@media screen and (min-width: 768px){
+    nav{
+        display: flex;
+        grid-area: hd;
+        width: 30vw;
+        display: flex;
+        margin-left: auto;
+        justify-content: flex-end;
+        margin-right: 2vw;
+    }
+    
+    nav a {
+       
+        color: black;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border-color:#000000;
+        border-style: solid;
+        margin: 15px;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        transition: linear 0.1s;
+        text-decoration: none;
+    }
+    nav a img{
+        width: 4vh;
+        padding-right: 10px;
+    }
+    
+    nav a:hover{
+        padding: 15px;
+        margin: 10px;
+        transition: linear 0.1s;
+    }
+    #menu-items {
+        display: none;
+        
+    }
+}
