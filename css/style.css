@@ -702,7 +702,7 @@ nav{
     }
     
     .container1{
-        grid-template-rows: 10vh 60vw 330vh 15vh 40vh 40vh 20vh;
+        grid-template-rows: 10vh 60vw 400vh 15vh 30vh 40vh 20vh;
         grid-template-areas:
         'hd hd hd hd'
         'img1 img1 img1 img1'
@@ -713,10 +713,10 @@ nav{
         'ft ft ft ft';
     }
     .contchange1{
-        grid-template-rows: 10vh 60vw 330vh 40vh 15vh 40vh 20vh;
+        grid-template-rows: 10vh 60vw 400vh 35vh 10vh 40vh 20vh;
     }
     .contchange2{
-        grid-template-rows: 10vh 60vw 330vh 15vh 40vh 40vh 20vh;
+        grid-template-rows: 10vh 60vw 400vh 15vh 30vh 40vh 20vh;
     }
     .modeller .art1{
         grid-area: art1;
