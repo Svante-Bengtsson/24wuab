@@ -28,3 +28,13 @@ document.querySelectorAll('.click2').forEach(e => {
 
   })
 });
+window.onscroll = function() {stickyaside()};
+var aside = document.querySelector(".sidebar");
+var sticky = aside.offsetTop
+function stickyaside() {
+  if (window.scrollY >= sticky) {
+    aside.classList.add("sticky")
+  } else {
+    aside.classList.remove("sticky");
+  }
+}
